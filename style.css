@@ -695,9 +695,23 @@ p {
 	}
 	/* End header */
 
+
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
 }
-/* End  Media Query For Desktop */
+/* FIX FOOTER SOCIAL ICONS */
+#footer .social-item img {
+	width: 40px;
+	height: 40px;
+	object-fit: contain;
+	filter: invert(1); /* white icons */
+}
+
+#footer .social-item:hover img {
+	filter: invert(1);
+	transform: scale(1.1);
+	transition: 0.3s;
+}
+
